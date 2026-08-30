@@ -1,0 +1,94 @@
+:root {
+  --app-bg: #f7f8fa;
+  --app-primary: #ff6b3b;
+  --app-primary-dark: #ee4d2d;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: #323233;
+  background-color: var(--app-bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: var(--app-bg);
+  min-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* 页面通用容器 */
+.page {
+  min-height: 100vh;
+  background-color: var(--app-bg);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 主题色覆盖 Vant */
+:root {
+  --van-primary-color: #ff6b3b;
+  --van-tabbar-item-active-color: #ff6b3b;
+  --van-nav-bar-icon-color: #ff6b3b;
+  --van-nav-bar-title-text-color: #323233;
+  --van-tab-active-text-color: #ff6b3b;
+  --van-tabs-bottom-bar-color: #ff6b3b;
+  --van-button-primary-background: #ff6b3b;
+  --van-button-primary-border-color: #ff6b3b;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* 价格积分色 */
+.points-color {
+  color: #ff6b3b;
+  font-weight: 600;
+}
+
+/* 空状态容器 */
+.empty-wrap {
+  padding: 60px 0;
+}
